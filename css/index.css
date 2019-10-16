@@ -126,6 +126,34 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.myBuildBorder {
+  border: 1px dashed red;
+}
+header {
+  border: 1px dashed red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav {
+  border: 1px dashed red;
+}
+header nav a {
+  border: 1px dashed red;
+}
+footer {
+  border: 1px dashed red;
+  background-color: #dadada;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  padding: 3% 0% 3% 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 body {
   background-color: grey;
 }
