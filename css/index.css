@@ -133,23 +133,16 @@ header {
   border: 1px dashed red;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  z-index: 10;
   padding: 0% 3% 0% 3%;
-  width: 100%;
   height: 5rem;
-  position: fixed;
-  top: 0;
   background-color: none;
 }
 header .logo {
   border: 1px dashed red;
   width: 10%;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.753);
-  border-radius: 10px 0px;
-  padding: 0.5rem;
 }
 header .logo a {
   font-weight: 500;
@@ -159,9 +152,9 @@ header nav {
   border: 1px dashed red;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 40%;
 }
 header a {
   color: blue;
@@ -172,7 +165,6 @@ footer {
   border: 1px dashed red;
   background-color: none;
   bottom: 0;
-  width: 100%;
   padding: 3% 0% 3% 0%;
   display: flex;
   flex-direction: row;
@@ -181,19 +173,43 @@ footer {
 }
 .cta-container {
   border: 1px dashed red;
-  margin-top: 5rem;
-  background-color: aqua;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .cta {
   border: 1px dashed red;
-  margin: 0 auto;
-  max-width: 840px;
-  height: 50%;
+  max-width: 36%;
+  height: 40%;
   position: relative;
-  top: 20%;
+  left: 20%;
+  top: 25%;
   vertical-align: baseline;
+}
+.phone-app-view {
+  border: 1px dashed red;
+  max-width: 300px;
+  height: 60%;
+  position: relative;
+  bottom: 11%;
+  left: 30%;
 }
 .feature-container {
   height: 100vh;
+  border: 1px dashed red;
+}
+.feature-container .main-feature-row {
+  border: 1px dashed red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.feature-container .main-feature-row .feature-box {
+  border: 1px dashed red;
+  width: 20%;
+  height: 70px;
+  margin: 2%;
 }

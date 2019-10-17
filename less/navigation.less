@@ -1,21 +1,14 @@
 header {
     .myBuildBorder;
-    .flex(row; space-around; center);
-    z-index: 10;
+    .flex(row; space-between; center); 
     padding: 0% 3% 0% 3%;
-    width: 100%;
     height: @HeaderFloatPadding;
-    position: fixed;
-    top: 0;
     background-color: @HeaderBackgroundColor;
 
     .logo {
         .myBuildBorder;
         width: 10%;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.753);
-        border-radius: 10px 0px;
-        padding: 0.5rem;
 
         a {
             font-weight: 500;
@@ -25,8 +18,8 @@ header {
 
     nav {
         .myBuildBorder;
-        .flex(row; space-around; center);
-        width: 60%;
+        .flex(row; space-between; center);
+        width: 40%;
     }
 
     a {
