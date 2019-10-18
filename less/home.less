@@ -1,9 +1,42 @@
+.splash-background {
+    background-image: url("../img/girl_holds_plant.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
 .splash {
-    .myBorder;
+    // .myBorder;
     height: 100vh;
-    
+
     .cta-box {
-        background-color: beige;
+        background-color: rgba(81, 59, 245, 0.185);
+        border-radius: 20px;
+        padding: 3%; 
+        
+        .flex(column; space-around; start);
+
+        
+        #AppName {
+            font-size: calc(3rem + 3vw);
+            color: white; 
+            font-weight: 700; 
+        }
+
+        #AppSlogan {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: white;
+        }
+
+        #iosAppStore {
+            .flex(row; space-around; center);
+            border: 1px solid white;
+            width: 150px; 
+            height: 50px;
+            border-radius: 10px;
+        }
     }
 }
 
@@ -11,14 +44,28 @@
 .feature {
     .myBorder;
     height: 100vh;
+    background-color: #F9F9F9; 
 
     .feature-header {
-        background-color: beige;
+        .flex(column; space-evenly; center);
+
+        h3 {
+            font-size: calc(2rem + 1vw);
+            text-align: center;
+        }
+
+        p {
+            font-size: 1rem;
+            text-align: justify; 
+        }
     }
 
     .feature-container {
-
         background-color: lightgrey;
+
+        #RFG {
+            .flex(columns; center; center);
+        }
     }
 }
 
