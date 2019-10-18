@@ -129,6 +129,55 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.splash {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1% repeat(10, 1fr) 1%;
+}
+.splash .cta-box {
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 8;
+}
+.feature {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1% repeat(10, 1fr) 1%;
+}
+.feature .feature-header {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.feature .feature-container {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 4;
+  grid-row-end: 13;
+  display: grid;
+  grid-template-columns: 3% repeat(3, 1fr) 3%;
+  grid-template-rows: 3% 1fr 3%;
+}
+.feature .feature-container #RFG {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.feature .feature-container #Phone {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.feature .feature-container #LFG {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
 header {
   border: 1px dashed red;
   display: grid;
@@ -170,6 +219,12 @@ header .access {
   align-items: center;
   align-self: center;
 }
+header .access #signUp {
+  margin: 5%;
+}
+header .access #signIn {
+  margin: 5%;
+}
 footer {
   border: 1px dashed red;
   background-color: none;
@@ -179,4 +234,30 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+.splash {
+  border: 1px dashed red;
+  height: 100vh;
+}
+.splash .cta-box {
+  background-color: beige;
+}
+.feature {
+  border: 1px dashed red;
+  height: 100vh;
+}
+.feature .feature-header {
+  background-color: beige;
+}
+.feature .feature-container {
+  background-color: lightgrey;
+}
+.faq {
+  border: 1px dashed red;
+}
+.getIt {
+  border: 1px dashed red;
+}
+.contact {
+  border: 1px dashed red;
 }

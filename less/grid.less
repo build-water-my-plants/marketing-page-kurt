@@ -1,0 +1,39 @@
+.splash {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1% repeat(10, 1fr) 1%;
+
+    .cta-box {
+        .grid-span(3; 7; 4; 8);
+    }
+}
+
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1% repeat(10, 1fr) 1%;
+
+    .feature-header {
+        .grid-span(1; 13; 1; 4);
+    }
+
+    .feature-container {
+        .grid-span(1; 13; 4; 13);
+        display: grid;
+        grid-template-columns: 3% repeat(3, 1fr) 3%;
+        grid-template-rows: 3% 1fr 3%;
+
+        #RFG {
+            .grid-span(2; 3; 2; 3);
+        }
+
+        #Phone {
+            .grid-span(3; 4; 2; 3);
+        }
+
+        #LFG {
+            .grid-span(4; 5; 2; 3; );
+        }
+    }
+}
