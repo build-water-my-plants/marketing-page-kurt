@@ -64,7 +64,24 @@
         background-color: lightgrey;
 
         #RFG {
-            .flex(columns; center; center);
+            .flex(column; space-evenly; stretch); 
+
+            .feature-box {
+                .myBorder;
+            }
+        }
+
+        #Phone, img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #LFG {
+            .flex(column; space-evenly; stretch);
+
+            .feature-box {
+                .myBorder;
+            }
         }
     }
 }
@@ -72,12 +89,56 @@
 
 .faq {
     .myBorder;
+    height: 50vh;
+    .flex(row; space-evenly; stretch);
+    padding: 3%;
+    background-image: url("../img/bottle_water_plant.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .faq-left {   
+        .myBorder; 
+        width: 45%;
+    }
+
+    .faq-right {
+        .myBorder;
+        width: 45%;
+    }
 }
 
 .getIt {
     .myBorder;
+    height: 50vh;
+    .flex(row; space-evenly; stretch);
+    padding: 3%;
+
+
+    .phone-app {
+        .myBorder;
+        width: 30%;
+    }
+
+    .getIt-cta {
+        .myBorder;
+        width: 60%;
+    }
 }
 
 .contact {
     .myBorder;
+    height: 50vh;
+    .flex(row; space-evenly; stretch);
+    padding: 3%;
+
+    .contact-left {
+        .myBorder;
+        width: 50%;
+    }
+
+    .contact-right {
+        .myBorder;
+        width: 40%;
+    }
 }
