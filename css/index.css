@@ -1,3 +1,6 @@
+.myBorder {
+  border: 1px dashed red;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -126,29 +129,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.myBuildBorder {
-  border: 1px dashed red;
-}
 header {
+  border: 1px dashed red;
   display: grid;
-  grid-template-rows: repeat(3, 30px);
-  grid-template-columns: 50px repeat(10, 1fr) 50px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 20px 50px 20px;
+  justify-items: center;
 }
 header .logo {
+  border: 1px dashed red;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+}
+header nav {
+  border: 1px dashed red;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  align-self: center;
 }
-header nav {
-  grid-column-start: 8;
-  grid-column-end: 12;
+header .access {
+  border: 1px dashed red;
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  align-self: center;
 }
 footer {
   border: 1px dashed red;
@@ -159,46 +169,4 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-}
-.cta-container {
-  border: 1px dashed red;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.cta {
-  border: 1px dashed red;
-  max-width: 36%;
-  height: 40%;
-  position: relative;
-  left: 20%;
-  top: 25%;
-  vertical-align: baseline;
-}
-.phone-app-view {
-  border: 1px dashed red;
-  max-width: 300px;
-  height: 60%;
-  position: relative;
-  bottom: 11%;
-  left: 30%;
-}
-.feature-container {
-  height: 100vh;
-  border: 1px dashed red;
-}
-.feature-container .main-feature-row {
-  border: 1px dashed red;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-}
-.feature-container .main-feature-row .feature-box {
-  border: 1px dashed red;
-  width: 20%;
-  height: 70px;
-  margin: 2%;
 }

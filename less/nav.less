@@ -1,0 +1,26 @@
+header {
+    .myBorder;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 20px 50px 20px;
+    justify-items: center;
+
+    .logo {
+        .myBorder; 
+        .grid-span(1; 2; 2; 3);
+        align-self: center;
+    }
+
+    nav {
+        .myBorder;
+        .grid-span(2; 3; 2; 3);
+        align-self: center;
+    }
+
+    .access {
+        .myBorder;
+        .grid-span(3; 4; 2; 3);
+        align-self: center;
+    }
+}
+
