@@ -150,6 +150,11 @@ header nav {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   align-self: center;
 }
 header .access {
@@ -158,6 +163,11 @@ header .access {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   align-self: center;
 }
 footer {
