@@ -130,109 +130,147 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.splash {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1% repeat(10, 1fr) 1%;
-  transform: rotate(-10deg);
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .access {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .splash .cta-box {
-  grid-column-start: 2;
-  grid-column-end: 9;
-  grid-row-start: 3;
-  grid-row-end: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+.splash .cta-box #iosAppStore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .feature {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(6, 50px) repeat(6, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 .feature .feature-header {
-  grid-column-start: 4;
-  grid-column-end: 10;
-  grid-row-start: 1;
-  grid-row-end: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .feature .feature-container {
-  grid-column-start: 1;
-  grid-column-end: 13;
-  grid-row-start: 5;
-  grid-row-end: 13;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 3% repeat(3, 1fr) 3%;
-  grid-template-rows: 3% 1fr 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.feature .feature-container .feature-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .feature .feature-container #RFG {
-  border: 1px dashed red;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
 .feature .feature-container #Phone {
-  border: 1px dashed red;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .feature .feature-container #LFG {
-  border: 1px dashed red;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.tag .tag-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.getIt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.getIt .phone-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.getIt .getIt-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.getIt .getIt-cta #iosAppStore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
 header {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 0.5fr;
-  grid-template-rows: 20px 50px 20px;
-  justify-items: center;
+  border: 1px dashed red;
+  height: 5rem;
   background-color: rgba(81, 59, 245, 0.185);
 }
 header .logo {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  align-self: center;
+  border: 1px dashed red;
+  width: 15%;
 }
 header nav {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  width: 100%;
-  padding: 2%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-self: center;
+  border: 1px dashed red;
+  width: 50%;
 }
 header nav a {
-  text-decoration: none;
   color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 header .access {
   border: 1px dashed red;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-self: center;
-}
-header .access #signUp {
-  margin: 5%;
-}
-header .access #signIn {
-  margin: 5%;
+  width: 15%;
 }
 footer {
   border: 1px dashed red;
@@ -254,33 +292,33 @@ footer {
   height: 100vh;
 }
 .splash .cta-box {
+  width: 50%;
   background-color: rgba(81, 59, 245, 0.185);
   border-radius: 20px;
-  padding: 3%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: start;
+  padding: 2%;
+  position: relative;
+  top: 25%;
+  left: 15%;
+  transform: rotate(-10deg);
 }
 .splash .cta-box #AppName {
   font-size: calc(3rem + 3vw);
   color: white;
   font-weight: 700;
+  padding: 2%;
 }
 .splash .cta-box #AppSlogan {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: white;
+  padding: 2%;
 }
 .splash .cta-box #iosAppStore {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   border: 1px solid white;
   width: 150px;
-  height: 50px;
+  height: 60px;
   border-radius: 10px;
+  margin: 2%;
 }
 .feature {
   border: 1px dashed red;
@@ -288,69 +326,87 @@ footer {
   background-color: #F9F9F9;
 }
 .feature .feature-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  padding: 3% 10% 3% 10%;
 }
 .feature .feature-header h3 {
+  border: 1px dashed red;
   font-size: calc(2rem + 1vw);
   text-align: center;
+  margin: 2%;
 }
 .feature .feature-header p {
+  border: 1px dashed red;
   font-size: 1rem;
   text-align: justify;
+  margin: 2%;
 }
 .feature .feature-container {
   background-color: lightgrey;
+  height: 100%;
+  padding: 3%;
+}
+.feature .feature-container .feature-box {
+  border: 1px dashed red;
+  padding: 5%;
+  margin: 5%;
+}
+.feature .feature-container .feature-box .icon {
+  border: 1px dashed red;
+}
+.feature .feature-container .feature-box h6 {
+  margin: 0% 0% 3% 5%;
+}
+.feature .feature-container .feature-box p {
+  margin: 0% 0% 3% 5%;
+}
+.feature .feature-container img {
+  height: 90%;
+  overflow: hidden;
 }
 .feature .feature-container #RFG {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: stretch;
+  border: 1px dashed red;
+  width: 30%;
 }
 .feature .feature-container #RFG .feature-box {
   border: 1px dashed red;
 }
-.feature .feature-container #Phone,
-.feature .feature-container img {
-  width: 100%;
-  height: 100%;
+.feature .feature-container #Phone {
+  border: 1px dashed red;
+  width: 30%;
+  overflow: hidden;
 }
 .feature .feature-container #LFG {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: stretch;
+  border: 1px dashed red;
+  width: 33%;
 }
 .feature .feature-container #LFG .feature-box {
   border: 1px dashed red;
 }
-.faq {
+.tag {
   border: 1px dashed red;
   height: 50vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: stretch;
-  padding: 3%;
-  background-image: url("../img/bottle_water_plant.jpg");
+  padding: 5%;
+  background-image: url("../img/pineapple.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.faq .faq-left {
+.tag .tag-line {
   border: 1px dashed red;
-  width: 45%;
+  max-width: 100%;
 }
-.faq .faq-right {
+.tag .tag-line p {
   border: 1px dashed red;
-  width: 45%;
+  padding: 5%;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.747);
+  transform: rotate(-30deg);
 }
 .getIt {
   border: 1px dashed red;
-  height: 50vh;
+  background-color: rgba(81, 59, 245, 0.185);
+  height: 75vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -364,6 +420,21 @@ footer {
 .getIt .getIt-cta {
   border: 1px dashed red;
   width: 60%;
+}
+.getIt .getIt-cta h3 {
+  font-size: 3rem;
+  margin: 3%;
+}
+.getIt .getIt-cta p {
+  font-size: 1.2rem;
+  margin: 3%;
+}
+.getIt .getIt-cta #iosAppStore {
+  border: 1px solid white;
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 3%;
 }
 .contact {
   border: 1px dashed red;

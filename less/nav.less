@@ -1,45 +1,26 @@
 header {
-    // .myBorder;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: 20px 50px 20px;
-    justify-items: center;
-    background-color: rgba(81, 59, 245, 0.185);
+    .myBorder;
+    height: @HeaderFloatPadding;
+    background-color: @HeaderBackgroundColor;
 
     .logo {
-        // .myBorder; 
-        .grid-span(1; 2; 2; 3);
-        align-self: center;
+        .myBorder;
+        width: 15%; 
     }
 
     nav {
-        // .myBorder;
-        .grid-span(2; 3; 2; 3);
-        width: 100%; 
-        padding: 2%; 
-        .flex(row; space-around; center);
-        align-self: center;
-
+        .myBorder;
+        width: 50%; 
+        
         a {
+            color: @HeaderFontColor; 
+            font-size: @HeaderFontSize;
             text-decoration: none;
-            color: white; 
         }
     }
 
     .access {
-        .myBorder;
-        .grid-span(3; 4; 2; 3);
-        width: 50%;
-        .flex(row; space-around; center);
-        align-self: center;
-
-        #signUp {
-            margin: 5%;
-        }
-        
-        #signIn {
-            margin: 5%;
-        }
+        .myBorder; 
+        width: 15%; 
     }
 }
-

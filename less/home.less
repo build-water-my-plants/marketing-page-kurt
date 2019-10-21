@@ -11,31 +11,36 @@
     height: 100vh;
 
     .cta-box {
-        background-color: rgba(81, 59, 245, 0.185);
+        width: 50%; 
+        background-color: @ctaBoxColor;
         border-radius: 20px;
-        padding: 3%; 
-        
-        .flex(column; space-around; start);
+        padding: 2%; 
+        position: relative;
+        top: 25%;
+        left: 15%;
+        transform: rotate(-10deg); 
 
         
         #AppName {
             font-size: calc(3rem + 3vw);
             color: white; 
             font-weight: 700; 
+            padding: 2%;
         }
 
         #AppSlogan {
-            font-size: 1.6rem;
+            font-size: 1.2rem;
             font-weight: 400;
             color: white;
+            padding: 2%; 
         }
 
         #iosAppStore {
-            .flex(row; space-around; center);
             border: 1px solid white;
             width: 150px; 
-            height: 50px;
+            height: 60px;
             border-radius: 10px;
+            margin: 2%;
         }
     }
 }
@@ -47,37 +52,70 @@
     background-color: #F9F9F9; 
 
     .feature-header {
-        .flex(column; space-evenly; center);
+        padding: 3% 10% 3% 10%;   
 
         h3 {
+            .myBorder; 
             font-size: calc(2rem + 1vw);
             text-align: center;
+            margin: 2%; 
         }
 
         p {
+            .myBorder; 
             font-size: 1rem;
             text-align: justify; 
+            margin: 2%; 
         }
     }
 
     .feature-container {
         background-color: lightgrey;
+        height: 100%; 
+        padding: 3%; 
+
+        .feature-box {
+            .myBorder;
+            padding: 5%; 
+            margin: 5%; 
+
+            .icon {
+                .myBorder;
+            }
+
+            h6 {
+                margin: 0% 0% 3% 5%; 
+            }
+
+            p {
+                margin: 0% 0% 3% 5%; 
+            }
+        }
+
+        img {
+            height: 90%;
+            overflow: hidden;
+        }
 
         #RFG {
-            .flex(column; space-evenly; stretch); 
+            .myBorder; 
+            width: 30%;
 
             .feature-box {
                 .myBorder;
             }
         }
 
-        #Phone, img {
-            width: 100%;
-            height: 100%;
+        #Phone {
+            .myBorder;
+            width: 30%; 
+            overflow: hidden; 
+
         }
 
         #LFG {
-            .flex(column; space-evenly; stretch);
+            .myBorder; 
+            width: 33%; 
 
             .feature-box {
                 .myBorder;
@@ -87,30 +125,36 @@
 }
 
 
-.faq {
+.tag {
     .myBorder;
     height: 50vh;
-    .flex(row; space-evenly; stretch);
-    padding: 3%;
-    background-image: url("../img/bottle_water_plant.jpg");
+    padding: 5%;
+    background-image: url("../img/pineapple.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    .faq-left {   
+    .tag-line {   
         .myBorder; 
-        width: 45%;
-    }
+        max-width: 100%;
+        // overflow: hidden;
 
-    .faq-right {
-        .myBorder;
-        width: 45%;
+        p {
+            .myBorder;
+            padding: 5%; 
+            font-size: 3rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.747);
+            transform: rotate(-30deg); 
+            
+        }
     }
 }
 
 .getIt {
     .myBorder;
-    height: 50vh;
+    background-color: @ctaBoxColor;
+    height: 75vh;
     .flex(row; space-evenly; stretch);
     padding: 3%;
 
@@ -123,6 +167,24 @@
     .getIt-cta {
         .myBorder;
         width: 60%;
+
+        h3 {
+            font-size: 3rem;
+            margin: 3%;  
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 3%; 
+        }
+
+        #iosAppStore {
+            border: 1px solid white;
+            width: 150px;
+            height: 60px;
+            border-radius: 10px;
+            margin: 3%;
+        }
     }
 }
 
