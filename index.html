@@ -23,13 +23,12 @@
             </div>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="features.html">Features</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <a href="#feature">Features</a>
+                <a href="#getIt">Download</a>
+                <a href="#contact">Contact</a>
             </nav>
             <div class="access">
                 <button id="signUp">Sign Up</button> 
-                <p>|</p>
                 <button id="signIn">Sign In</button>
             </div>
     </header>
@@ -43,7 +42,7 @@
         </div>
     </div>
 
-    <div class="feature">
+    <div class="feature" id="feature">
         <div class="feature-header">
             <h3>Water My Plant - Features</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore numquam natus nostrum! Molestiae corrupti tenetur modi dolorem eligendi ea quas et nobis ipsum eos.</p>
@@ -129,7 +128,7 @@
         </div>
     </div>
 
-    <div class="getIt">
+    <div class="getIt" id="getIt">
         <div class="phone-app">
             <img src="../marketing-page-kurt/img/smartphone-call.svg">
         </div>
@@ -140,12 +139,33 @@
         </div>
     </div>
 
-    <div class="contact">
-        <div class="contact-left">LeftBox</div>
-        <div class="contact-right">RightBox</div>
+    <div class="contact" id="contact">
+        <div class="contact-left">
+            <h3>Contact<br>Us!</h3> 
+        </div>
+        
+        <div class="contact-right">
+            <div class="contact-container">
+                <form action="action_page.php">
+                    <label for="fname">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name...">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email...">
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="What's up...?"
+                        style="height:100px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </div>
 
-    <footer>footer!</footer>
+    <footer>
+        <h6>Water My Plant</h6>
+    </footer>
 
 </body>
 </html>
