@@ -3,14 +3,27 @@ header {
     height: @HeaderFloatPadding;
     background-color: @HeaderBackgroundColor;
 
+        @media @mobile500 {
+            flex-direction: column;
+            overflow: hidden; 
+        }
+
     .logo {
         .myBorder;
         width: 15%; 
+
+            @media @mobile500 {
+                display: none;
+            }
     }
 
     nav {
         .myBorder;
         width: 50%; 
+
+            @media @mobile500 {
+                width: 100%;
+            }
         
         a {
             color: @HeaderFontColor; 
@@ -21,11 +34,15 @@ header {
 
     .access {
         .myBorder; 
-        width: 15%; 
+        width: 25%; 
+
+            @media @mobile500 {
+                width: 50%;
+            }
 
         button {
             width: 100px; 
-            height: 30px;
+            height: 40px;
             margin: 1%;
             border: 2px solid purple;
             border-radius: 5px; 

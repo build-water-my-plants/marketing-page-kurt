@@ -273,13 +273,29 @@ header {
   height: 5rem;
   background-color: rgba(81, 59, 245, 0.185);
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
 header .logo {
   border: 0px dashed red;
   width: 15%;
 }
+@media (max-width: 500px) {
+  header .logo {
+    display: none;
+  }
+}
 header nav {
   border: 0px dashed red;
   width: 50%;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+  }
 }
 header nav a {
   color: white;
@@ -288,11 +304,16 @@ header nav a {
 }
 header .access {
   border: 0px dashed red;
-  width: 15%;
+  width: 25%;
+}
+@media (max-width: 500px) {
+  header .access {
+    width: 50%;
+  }
 }
 header .access button {
   width: 100px;
-  height: 30px;
+  height: 40px;
   margin: 1%;
   border: 2px solid purple;
   border-radius: 5px;
@@ -440,6 +461,11 @@ footer {
   border: 0px dashed red;
   width: 30%;
 }
+@media (max-width: 920px) {
+  .feature .feature-container #RFG {
+    width: 45%;
+  }
+}
 .feature .feature-container #RFG .feature-box {
   border: 0px dashed red;
 }
@@ -448,7 +474,7 @@ footer {
   width: 30%;
   overflow: hidden;
 }
-@media (max-width: 500px) {
+@media (max-width: 920px) {
   .feature .feature-container #Phone {
     display: none;
   }
@@ -456,6 +482,11 @@ footer {
 .feature .feature-container #LFG {
   border: 0px dashed red;
   width: 33%;
+}
+@media (max-width: 920px) {
+  .feature .feature-container #LFG {
+    width: 45%;
+  }
 }
 .feature .feature-container #LFG .feature-box {
   border: 0px dashed red;
@@ -468,10 +499,26 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+}
+@media (max-width: 920px) {
+  .tag {
+    padding: 0%;
+  }
 }
 .tag .tag-line {
   border: 0px dashed red;
   max-width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 920px) {
+  .tag .tag-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
 }
 .tag .tag-line p {
   border: 0px dashed red;
@@ -480,6 +527,12 @@ footer {
   font-weight: 700;
   color: rgba(255, 255, 255, 0.747);
   transform: rotate(-30deg);
+}
+@media (max-width: 920px) {
+  .tag .tag-line p {
+    transform: rotate(0deg);
+    font-size: 2rem;
+  }
 }
 .getIt {
   border: 0px dashed red;
@@ -491,11 +544,16 @@ footer {
   align-items: stretch;
   padding: 3%;
 }
+@media (max-width: 920px) {
+  .getIt {
+    padding: 0%;
+  }
+}
 .getIt .phone-app {
   border: 0px dashed red;
   width: 30%;
 }
-@media (max-width: 500px) {
+@media (max-width: 920px) {
   .getIt .phone-app {
     display: none;
   }
@@ -503,6 +561,11 @@ footer {
 .getIt .getIt-cta {
   border: 0px dashed red;
   width: 60%;
+}
+@media (max-width: 920px) {
+  .getIt .getIt-cta {
+    width: 90%;
+  }
 }
 .getIt .getIt-cta h3 {
   font-size: 3rem;
@@ -535,7 +598,17 @@ footer {
   color: whitesmoke;
   overflow: hidden;
 }
+@media (max-width: 920px) {
+  .contact .contact-left {
+    display: none;
+  }
+}
 .contact .contact-right {
   border: 0px dashed red;
   width: 50%;
+}
+@media (max-width: 920px) {
+  .contact .contact-right {
+    width: 90%;
+  }
 }

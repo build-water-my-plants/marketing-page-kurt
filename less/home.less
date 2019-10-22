@@ -78,6 +78,7 @@
         height: 100%; 
         padding: 3%; 
 
+
         .feature-box {
             .myBorder;
             padding: 5%; 
@@ -111,6 +112,10 @@
             .myBorder; 
             width: 30%;
 
+                @media @mobile920 {
+                    width: 45%;
+                }
+
             .feature-box {
                 .myBorder;
             }
@@ -120,7 +125,8 @@
             .myBorder;
             width: 30%; 
             overflow: hidden; 
-                @media @mobile {
+
+                @media @mobile920 {
                     display: none;
                 }
 
@@ -129,6 +135,9 @@
         #LFG {
             .myBorder; 
             width: 33%; 
+                @media @mobile920 {
+                    width: 45%;
+                }
 
             .feature-box {
                 .myBorder;
@@ -146,11 +155,21 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
+
+                @media @mobile920 {
+                    padding: 0%;
+                }
 
     .tag-line {   
         .myBorder; 
         max-width: 100%;
-        // overflow: hidden;
+        overflow: hidden;
+
+            @media @mobile920 {
+                .flex(row; center; center);
+                width: auto;
+            }
 
         p {
             .myBorder;
@@ -159,7 +178,11 @@
             font-weight: 700;
             color: rgba(255, 255, 255, 0.747);
             transform: rotate(-30deg); 
-            
+
+                @media @mobile920 {
+                    transform: rotate(0deg);
+                    font-size: 2rem;
+                }
         }
     }
 }
@@ -171,12 +194,16 @@
     .flex(row; space-evenly; stretch);
     padding: 3%;
 
+        @media @mobile920 {
+            padding: 0%;
+        }
+
 
     .phone-app {
         .myBorder;
         width: 30%;
-        
-            @media @mobile {
+
+            @media @mobile920 {
                 display: none;
             }   
     }
@@ -184,6 +211,10 @@
     .getIt-cta {
         .myBorder;
         width: 60%;
+
+            @media @mobile920 {
+                width: 90%;
+            }
 
         h3 {
             font-size: 3rem;
@@ -221,10 +252,19 @@
         color: whitesmoke;
         overflow: hidden; 
 
+            @media @mobile920 {
+                display: none;
+            }
+
     }
 
     .contact-right {
         .myBorder;
         width: 50%;
+
+            @media @mobile920 {
+                width: 90%;
+            }
+        
     }
 }
