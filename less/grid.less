@@ -1,0 +1,67 @@
+header {
+    .myBorder;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 20px 50px 20px;
+
+    .logo {
+        // .myBorder; 
+        .grid-span(1; 2; 2; 3);
+    }
+
+    nav {
+        // .myBorder;
+        .grid-span(2; 3; 2; 3);
+    }
+
+    .access {
+        .grid-span(3; 4; 2; 3);
+        }
+}
+
+
+
+.splash {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1% repeat(10, 1fr) 1%;
+    transform: rotate(0deg);
+
+    .cta-box {
+        .grid-span(2; 9; 3; 8);
+    }
+}
+
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 50px) repeat(6, 1fr);
+
+    .feature-header {
+        .grid-span(4; 10; 1; 5);
+    }
+
+    .feature-container {
+        .grid-span(1; 13; 5; 13);
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 3% repeat(3, 1fr) 3%;
+        grid-template-rows: 3% 1fr 3%;
+
+        #RFG {
+            .myBorder;
+            .grid-span(2; 3; 2; 3);
+        }
+
+        #Phone {
+            .myBorder;
+            .grid-span(3; 4; 2; 3);
+        }
+
+        #LFG {
+            .myBorder;
+            .grid-span(4; 5; 2; 3; );
+        }
+    }
+}

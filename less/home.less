@@ -1,0 +1,270 @@
+.splash-background {
+    background-image: url("../img/girl_holds_plant.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.splash {
+    // .myBorder;
+    height: 100vh;
+
+    .cta-box {
+        width: 50%; 
+        background-color: @ctaBoxColor;
+        border-radius: 20px;
+        padding: 2%; 
+        position: relative;
+        top: 25%;
+        left: 15%;
+        transform: rotate(-10deg); 
+        -webkit-box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.49);
+        box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.49);
+        
+
+
+        
+        #AppName {
+            font-size: calc(3rem + 3vw);
+            color: white; 
+            font-weight: 700; 
+            padding: 2%;
+        }
+
+        #AppSlogan {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: white;
+            padding: 2%; 
+        }
+
+        #iosAppStore {
+            border: 1px solid white;
+            width: 150px; 
+            height: 60px;
+            border-radius: 10px;
+            margin: 2%;
+        }
+    }
+}
+
+
+.feature {
+    .myBorder;
+    height: 100vh;
+    background-color: #F9F9F9; 
+
+    .feature-header {
+        padding: 3% 10% 3% 10%;   
+
+        h3 {
+            .myBorder; 
+            font-size: calc(2rem + 1vw);
+            text-align: center;
+            margin: 2%; 
+        }
+
+        p {
+            .myBorder; 
+            font-size: 1rem;
+            text-align: justify; 
+            margin: 2%; 
+        }
+    }
+
+    .feature-container {
+        background-color: lightgrey;
+        height: 100%; 
+        padding: 3%; 
+
+
+        .feature-box {
+            .myBorder;
+            padding: 5%; 
+            margin: 5%; 
+            background-color:@ctaBoxColor; 
+            border-radius: 5px;
+            -webkit-box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.49);
+            box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.49);
+            
+
+
+            .icon {
+                .myBorder;
+            }
+
+            h6 {
+                margin: 0% 0% 3% 5%; 
+            }
+
+            p {
+                margin: 0% 0% 3% 5%; 
+            }
+        }
+
+        img {
+            height: 90%;
+            overflow: hidden;
+        }
+
+        #RFG {
+            .myBorder; 
+            width: 30%;
+
+                @media @mobile920 {
+                    width: 45%;
+                }
+
+            .feature-box {
+                .myBorder;
+            }
+        }
+
+        #Phone {
+            .myBorder;
+            width: 30%; 
+            overflow: hidden; 
+
+                @media @mobile920 {
+                    display: none;
+                }
+
+        }
+
+        #LFG {
+            .myBorder; 
+            width: 33%; 
+                @media @mobile920 {
+                    width: 45%;
+                }
+
+            .feature-box {
+                .myBorder;
+            }
+        }
+    }
+}
+
+
+.tag {
+    .myBorder;
+    height: 50vh;
+    padding: 5%;
+    background-image: url("../img/pineapple.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+                @media @mobile920 {
+                    padding: 0%;
+                }
+
+    .tag-line {   
+        .myBorder; 
+        max-width: 100%;
+        overflow: hidden;
+
+            @media @mobile920 {
+                .flex(row; center; center);
+                width: auto;
+            }
+
+        p {
+            .myBorder;
+            padding: 5%; 
+            font-size: 3rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.747);
+            transform: rotate(-30deg); 
+
+                @media @mobile920 {
+                    transform: rotate(0deg);
+                    font-size: 2rem;
+                }
+        }
+    }
+}
+
+.getIt {
+    .myBorder;
+    background-color: @ctaBoxColor;
+    height: 75vh;
+    .flex(row; space-evenly; stretch);
+    padding: 3%;
+
+        @media @mobile920 {
+            padding: 0%;
+        }
+
+
+    .phone-app {
+        .myBorder;
+        width: 30%;
+
+            @media @mobile920 {
+                display: none;
+            }   
+    }
+
+    .getIt-cta {
+        .myBorder;
+        width: 60%;
+
+            @media @mobile920 {
+                width: 90%;
+            }
+
+        h3 {
+            font-size: 3rem;
+            margin: 3%;  
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 3%; 
+        }
+
+        #iosAppStore {
+            border: 1px solid white;
+            width: 150px;
+            height: 60px;
+            border-radius: 10px;
+            margin: 3%;
+        }
+    }
+}
+
+.contact {
+    .myBorder;
+    height: 60vh;
+    padding: 3%;
+    background-image: url("../img/thumb.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .contact-left {
+        .myBorder;
+        width: 40%;
+        font-size: 5rem;
+        color: whitesmoke;
+        overflow: hidden; 
+
+            @media @mobile920 {
+                display: none;
+            }
+
+    }
+
+    .contact-right {
+        .myBorder;
+        width: 50%;
+
+            @media @mobile920 {
+                width: 90%;
+            }
+        
+    }
+}

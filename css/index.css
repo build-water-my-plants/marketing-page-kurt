@@ -1,0 +1,614 @@
+.myBorder {
+  border: 0px dashed red;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .access {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.splash .cta-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+.splash .cta-box #iosAppStore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.feature .feature-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.feature .feature-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.feature .feature-container .feature-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.feature .feature-container #RFG {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.feature .feature-container #Phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.feature .feature-container #LFG {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.tag .tag-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.getIt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.getIt .phone-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.getIt .getIt-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.getIt .getIt-cta #iosAppStore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.contact .contact-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact-right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+header {
+  border: 0px dashed red;
+  height: 5rem;
+  background-color: rgba(81, 59, 245, 0.185);
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
+header .logo {
+  border: 0px dashed red;
+  width: 15%;
+}
+@media (max-width: 500px) {
+  header .logo {
+    display: none;
+  }
+}
+header nav {
+  border: 0px dashed red;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+  }
+}
+header nav a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+header .access {
+  border: 0px dashed red;
+  width: 25%;
+}
+@media (max-width: 500px) {
+  header .access {
+    width: 50%;
+  }
+}
+header .access button {
+  width: 100px;
+  height: 40px;
+  margin: 1%;
+  border: 2px solid purple;
+  border-radius: 5px;
+  background-color: white;
+}
+header .access button:hover {
+  background-color: rgba(81, 59, 245, 0.185);
+  color: white;
+  border: 2px solid white;
+}
+header .access p {
+  font-size: 2rem;
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 3%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 1% 0% 2% 0%;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: rgba(81, 59, 245, 0.774);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: rgba(81, 59, 245, 0.185);
+}
+.contact-container {
+  box-sizing: border-box;
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  background-color: #f2f2f2a1;
+  padding: 3%;
+  -webkit-box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.49);
+}
+footer {
+  border: 0px dashed red;
+  background-color: rgba(81, 59, 245, 0.185);
+  bottom: 0;
+  padding: 3% 0% 3% 0%;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.splash-background {
+  background-image: url("../img/girl_holds_plant.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.splash {
+  height: 100vh;
+}
+.splash .cta-box {
+  width: 50%;
+  background-color: rgba(81, 59, 245, 0.185);
+  border-radius: 20px;
+  padding: 2%;
+  position: relative;
+  top: 25%;
+  left: 15%;
+  transform: rotate(-10deg);
+  -webkit-box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.49);
+}
+.splash .cta-box #AppName {
+  font-size: calc(3rem + 3vw);
+  color: white;
+  font-weight: 700;
+  padding: 2%;
+}
+.splash .cta-box #AppSlogan {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  padding: 2%;
+}
+.splash .cta-box #iosAppStore {
+  border: 1px solid white;
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 2%;
+}
+.feature {
+  border: 0px dashed red;
+  height: 100vh;
+  background-color: #F9F9F9;
+}
+.feature .feature-header {
+  padding: 3% 10% 3% 10%;
+}
+.feature .feature-header h3 {
+  border: 0px dashed red;
+  font-size: calc(2rem + 1vw);
+  text-align: center;
+  margin: 2%;
+}
+.feature .feature-header p {
+  border: 0px dashed red;
+  font-size: 1rem;
+  text-align: justify;
+  margin: 2%;
+}
+.feature .feature-container {
+  background-color: lightgrey;
+  height: 100%;
+  padding: 3%;
+}
+.feature .feature-container .feature-box {
+  border: 0px dashed red;
+  padding: 5%;
+  margin: 5%;
+  background-color: rgba(81, 59, 245, 0.185);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.49);
+}
+.feature .feature-container .feature-box .icon {
+  border: 0px dashed red;
+}
+.feature .feature-container .feature-box h6 {
+  margin: 0% 0% 3% 5%;
+}
+.feature .feature-container .feature-box p {
+  margin: 0% 0% 3% 5%;
+}
+.feature .feature-container img {
+  height: 90%;
+  overflow: hidden;
+}
+.feature .feature-container #RFG {
+  border: 0px dashed red;
+  width: 30%;
+}
+@media (max-width: 920px) {
+  .feature .feature-container #RFG {
+    width: 45%;
+  }
+}
+.feature .feature-container #RFG .feature-box {
+  border: 0px dashed red;
+}
+.feature .feature-container #Phone {
+  border: 0px dashed red;
+  width: 30%;
+  overflow: hidden;
+}
+@media (max-width: 920px) {
+  .feature .feature-container #Phone {
+    display: none;
+  }
+}
+.feature .feature-container #LFG {
+  border: 0px dashed red;
+  width: 33%;
+}
+@media (max-width: 920px) {
+  .feature .feature-container #LFG {
+    width: 45%;
+  }
+}
+.feature .feature-container #LFG .feature-box {
+  border: 0px dashed red;
+}
+.tag {
+  border: 0px dashed red;
+  height: 50vh;
+  padding: 5%;
+  background-image: url("../img/pineapple.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+@media (max-width: 920px) {
+  .tag {
+    padding: 0%;
+  }
+}
+.tag .tag-line {
+  border: 0px dashed red;
+  max-width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 920px) {
+  .tag .tag-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+}
+.tag .tag-line p {
+  border: 0px dashed red;
+  padding: 5%;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.747);
+  transform: rotate(-30deg);
+}
+@media (max-width: 920px) {
+  .tag .tag-line p {
+    transform: rotate(0deg);
+    font-size: 2rem;
+  }
+}
+.getIt {
+  border: 0px dashed red;
+  background-color: rgba(81, 59, 245, 0.185);
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 3%;
+}
+@media (max-width: 920px) {
+  .getIt {
+    padding: 0%;
+  }
+}
+.getIt .phone-app {
+  border: 0px dashed red;
+  width: 30%;
+}
+@media (max-width: 920px) {
+  .getIt .phone-app {
+    display: none;
+  }
+}
+.getIt .getIt-cta {
+  border: 0px dashed red;
+  width: 60%;
+}
+@media (max-width: 920px) {
+  .getIt .getIt-cta {
+    width: 90%;
+  }
+}
+.getIt .getIt-cta h3 {
+  font-size: 3rem;
+  margin: 3%;
+}
+.getIt .getIt-cta p {
+  font-size: 1.2rem;
+  margin: 3%;
+}
+.getIt .getIt-cta #iosAppStore {
+  border: 1px solid white;
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 3%;
+}
+.contact {
+  border: 0px dashed red;
+  height: 60vh;
+  padding: 3%;
+  background-image: url("../img/thumb.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contact .contact-left {
+  border: 0px dashed red;
+  width: 40%;
+  font-size: 5rem;
+  color: whitesmoke;
+  overflow: hidden;
+}
+@media (max-width: 920px) {
+  .contact .contact-left {
+    display: none;
+  }
+}
+.contact .contact-right {
+  border: 0px dashed red;
+  width: 50%;
+}
+@media (max-width: 920px) {
+  .contact .contact-right {
+    width: 90%;
+  }
+}

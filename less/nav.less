@@ -1,0 +1,62 @@
+header {
+    .myBorder;
+    height: @HeaderFloatPadding;
+    background-color: @HeaderBackgroundColor;
+
+        @media @mobile500 {
+            flex-direction: column;
+            overflow: hidden; 
+        }
+
+    .logo {
+        .myBorder;
+        width: 15%; 
+
+            @media @mobile500 {
+                display: none;
+            }
+    }
+
+    nav {
+        .myBorder;
+        width: 50%; 
+
+            @media @mobile500 {
+                width: 100%;
+            }
+        
+        a {
+            color: @HeaderFontColor; 
+            font-size: @HeaderFontSize;
+            text-decoration: none;
+        }
+    }
+
+    .access {
+        .myBorder; 
+        width: 25%; 
+
+            @media @mobile500 {
+                width: 50%;
+            }
+
+        button {
+            width: 100px; 
+            height: 40px;
+            margin: 1%;
+            border: 2px solid purple;
+            border-radius: 5px; 
+            background-color: white;
+        }
+
+        button:hover {
+            background-color: @ctaBoxColor;
+            color: white; 
+            border: 2px solid white; 
+        }
+
+        p {
+            font-size: 2rem; 
+        }
+    }
+}

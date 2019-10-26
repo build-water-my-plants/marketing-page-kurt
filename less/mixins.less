@@ -1,0 +1,19 @@
+.myBorder {
+    border: 0px dashed red;
+}
+
+
+.grid-span(@col-start; @col-end; @row-start; @row-end) {
+    grid-column-start: @col-start;
+    grid-column-end: @col-end;
+    grid-row-start: @row-start;
+    grid-row-end: @row-end;
+}
+
+
+.flex(@direction; @justify; @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
